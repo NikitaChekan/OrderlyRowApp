@@ -11,7 +11,6 @@
 		DAFB58232B2AFC6100249241 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB58222B2AFC6100249241 /* ContentView.swift */; };
 		DAFB58252B2AFC6600249241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFB58242B2AFC6600249241 /* Assets.xcassets */; };
 		DAFB58282B2AFC6600249241 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFB58272B2AFC6600249241 /* Preview Assets.xcassets */; };
-		DAFB58302B2AFE8300249241 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB582F2B2AFE8300249241 /* SquareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +19,6 @@
 		DAFB58222B2AFC6100249241 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DAFB58242B2AFC6600249241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAFB58272B2AFC6600249241 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DAFB582F2B2AFE8300249241 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				DAFB58222B2AFC6100249241 /* ContentView.swift */,
-				DAFB582F2B2AFE8300249241 /* SquareView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,7 +145,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFB58302B2AFE8300249241 /* SquareView.swift in Sources */,
 				DAFB58232B2AFC6100249241 /* ContentView.swift in Sources */,
 				DAFB58212B2AFC6100249241 /* OrderlyRowAppApp.swift in Sources */,
 			);
