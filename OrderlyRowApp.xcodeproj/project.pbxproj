@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA99E5A92B308E060064C546 /* DiagonalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA99E5A82B308E060064C546 /* DiagonalLayout.swift */; };
 		DAFB58212B2AFC6100249241 /* OrderlyRowAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB58202B2AFC6100249241 /* OrderlyRowAppApp.swift */; };
 		DAFB58232B2AFC6100249241 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB58222B2AFC6100249241 /* ContentView.swift */; };
 		DAFB58252B2AFC6600249241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFB58242B2AFC6600249241 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA99E5A82B308E060064C546 /* DiagonalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalLayout.swift; sourceTree = "<group>"; };
 		DAFB581D2B2AFC6100249241 /* OrderlyRowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderlyRowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFB58202B2AFC6100249241 /* OrderlyRowAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderlyRowAppApp.swift; sourceTree = "<group>"; };
 		DAFB58222B2AFC6100249241 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA99E5AA2B308E0A0064C546 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DA99E5A82B308E060064C546 /* DiagonalLayout.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		DAFB58142B2AFC6100249241 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +63,7 @@
 			children = (
 				DAFB58202B2AFC6100249241 /* OrderlyRowAppApp.swift */,
 				DAFB582E2B2AFE4F00249241 /* Views */,
+				DA99E5AA2B308E0A0064C546 /* Helpers */,
 				DAFB58242B2AFC6600249241 /* Assets.xcassets */,
 				DAFB58262B2AFC6600249241 /* Preview Content */,
 			);
@@ -145,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA99E5A92B308E060064C546 /* DiagonalLayout.swift in Sources */,
 				DAFB58232B2AFC6100249241 /* ContentView.swift in Sources */,
 				DAFB58212B2AFC6100249241 /* OrderlyRowAppApp.swift in Sources */,
 			);

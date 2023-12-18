@@ -9,54 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var isPressed: Bool = false
+    @State private var horizontal: Bool = true
     let squareCount: Int = 5
     
     var body: some View {
-        GeometryReader { geometry in
-            
-            let mainLayout = isPressed ? AnyLayout(VStackLayout(spacing: 0)) : AnyLayout(HStackLayout(spacing: 3))
-            let squaresLayout = isPressed ? AnyLayout(HStackLayout()) : AnyLayout(VStackLayout())
-            
-            mainLayout {
-                ForEach (0..<squareCount, id: \.self) { index in
-                    squaresLayout {
-                        createSquares(index: index, geometry: geometry)
-                    }
-                    .environment(\.layoutDirection, .leftToRight)
-                }
-                .onTapGesture {
-                    withAnimation {
-                        isPressed.toggle()
-                    }
-                }
+        
+        let layout = horizontal ? AnyLayout(HStackLayout()) : AnyLayout(DiagonalLayout())
+        
+        layout {
+            ForEach (0..<squareCount, id: \.self) { index in
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color(
+                        red: Double.random(in: 0...1),
+                        green: Double.random(in: 0...1),
+                        blue: Double.random(in: 0...1)
+                    ))
+                    .aspectRatio(1, contentMode: .fit)
             }
-            .environment(\.layoutDirection, .rightToLeft)
+        }
+        .onTapGesture {
+            withAnimation {
+                horizontal.toggle()
+            }
         }
     }
-    
-    func createSquares(index: Int, geometry: GeometryProxy) -> some View {
-        
-        let height = geometry.size.height / CGFloat(squareCount)
-        let rightSpacer = CGFloat(index) * (geometry.size.width - height) / CGFloat(squareCount - 1)
-        let leftSpacer = geometry.size.width - rightSpacer - height
-        
-        return HStack {
-            
-            Spacer()
-                .frame(width: isPressed ? leftSpacer : 0)
-            
-            Rectangle()
-                .cornerRadius(15)
-                .foregroundStyle(.blue)
-                .aspectRatio(contentMode: .fit)
-            
-            Spacer()
-                .frame(width: isPressed ? rightSpacer : 0)
-        }
-        .frame(maxHeight: .infinity, alignment: .center)
-    }
-    
 }
 
 #Preview {
